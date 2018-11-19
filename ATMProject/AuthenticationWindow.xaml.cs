@@ -70,6 +70,8 @@ namespace ATMProject {
 
                 if (token[1] == input) {
                     Console.WriteLine("Authenticated");
+                    MainWindow window = new MainWindow(this);
+                    window.Show();
                 } else {
                     Console.WriteLine("Invalid Pin");
                 }

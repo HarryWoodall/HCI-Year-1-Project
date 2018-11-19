@@ -20,9 +20,15 @@ namespace ATMProject
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        Window caller;
+        public MainWindow(Window caller)
         {
             InitializeComponent();
+            this.caller = caller;
+        }
+
+        private void Window_ContentRendered(object sender, EventArgs e) {
+            caller.Close();
         }
     }
 }
