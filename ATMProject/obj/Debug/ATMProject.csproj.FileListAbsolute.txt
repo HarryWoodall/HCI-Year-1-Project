@@ -15,3 +15,14 @@ C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and We
 C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\AuthenticationWindow.g.cs
 C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\AuthenticationWindow.baml
 C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\ATMProject_Content.g.cs
+C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\ATMProject.csprojAssemblyReference.cache
+C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\WithdrawWindow.g.cs
+C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\WithdrawWindow.baml
+C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\WithdrawAmmountWindow.g.cs
+C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\WithdrawAmmountWindow.baml
+C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\ExitWindow.g.cs
+C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\ResetPinWindow.g.cs
+C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\ViewBalanceWindow.g.cs
+C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\ExitWindow.baml
+C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\ResetPinWindow.baml
+C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\ViewBalanceWindow.baml

@@ -27,16 +27,16 @@
                 </StackPanel>
             </Border>
             <Border BorderThickness="1" Margin="2" HorizontalAlignment="Stretch" Grid.RowSpan="2" VerticalAlignment="Stretch" Background="#FF1A65A4" Grid.Column="1">
-                <Image Source="Assests/Icons/VeiwBalance.png" Height="100" Margin="0,72"/>
+                <Image Source="Assests/Icons/withdraw.png" Height="100" Margin="0,72"/>
             </Border>
             <Border BorderThickness="1" Grid.Column="2" Margin="2" Background="#FF1A65A4">
                 <Image Margin="10" Source="Assests/Icons/VeiwStatement.png"/>
             </Border>
-            <Border BorderThickness="1" Grid.Column="2" Margin="2" Background="#FF1A65A4" Grid.Row="1">
-                <Image Margin="10" Source="Icons/VeiwStatement.png"/>
+            <Border BorderThickness="1" Grid.Column="2" Margin="2" Background="#FF1A65A4" Grid.Row="1" MouseDown="viewBalanceButtonPush">
+                <Image Margin="10" Source="Assests/Icons/VeiwBalance.png" MouseDown="viewBalanceButtonPush"/>
             </Border>
-            <Border BorderThickness="1" Grid.Column="3" Margin="2" Background="#FF1A65A4">
-                <Image Height="100" Width="100" Margin="55,10,0,0"/>
+            <Border BorderThickness="1" Grid.Column="3" Margin="2" Background="#FFA41A1A" MouseDown="exitButtonPush">
+                <Image Height="100" Width="100" Margin="69,10,75,9"/>
             </Border>
             <Border BorderThickness="1" Grid.Column="3" Margin="2" Background="#FF1A65A4" Grid.Row="1">
                 <Image HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="75,10,0,0"/>

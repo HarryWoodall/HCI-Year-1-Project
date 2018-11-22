@@ -1,0 +1,25 @@
+﻿<Window x:Class="ATMProject.ViewBalanceWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ATMProject"
+        mc:Ignorable="d"
+        WindowState="Maximized"
+        WindowStyle="None"
+        Title="ViewBalanceWindow" Height="1024" Width="1280" Background="Black" ContentRendered="Window_ContentRendered">
+    <Grid Width="1280" Height="1024" Background="White">
+        <Grid HorizontalAlignment="Left" Height="648" Margin="156,108,0,0" VerticalAlignment="Top" Width="930">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Content="Current Balance" Margin="10" FontSize="100" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Label x:Name="balanceLabel" Content="Label" Margin="10" Grid.Row="1" FontSize="150" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        </Grid>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="140" Margin="444,816,0,0" VerticalAlignment="Top" Width="276" Background="#FF2D509B" MouseDown="backButtonPush">
+            <Label Content="Back" FontSize="72" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MouseDown="backButtonPush"/>
+        </Border>
+
+    </Grid>
+</Window>

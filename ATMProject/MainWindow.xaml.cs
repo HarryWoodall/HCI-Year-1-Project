@@ -30,5 +30,15 @@ namespace ATMProject
         private void Window_ContentRendered(object sender, EventArgs e) {
             caller.Close();
         }
+
+        private void viewBalanceButtonPush(object sender, MouseButtonEventArgs e) {
+            ViewBalanceWindow viewBalance = new ViewBalanceWindow(this);
+            viewBalance.Show();
+        }
+
+        private void exitButtonPush(object sender, MouseButtonEventArgs e) {
+            ExitWindow exit = new ExitWindow(this);
+            exit.Show();
+        }
     }
 }

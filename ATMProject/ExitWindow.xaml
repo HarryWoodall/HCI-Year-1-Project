@@ -1,0 +1,14 @@
+﻿<Window x:Class="ATMProject.ExitWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ATMProject"
+        mc:Ignorable="d"
+        WindowState="Maximized"
+        WindowStyle="None"
+        Title="ExitWindow" Height="1024" Width="1280" Background="Black" ContentRendered="Window_ContentRendered">
+    <Grid x:Name="contentGrid" Width="1280" Height="1024" Background="White">
+        <Label Content="Thank you!" Margin="178,351,192,369" FontSize="100" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+    </Grid>
+</Window>

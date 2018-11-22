@@ -62,6 +62,7 @@ namespace ATMProject {
                         for (int i = 0; i < token.Length; i++) {
                             token[i] = sr.ReadLine();
                         }
+                        sr.Close();
                     }
                 } catch (Exception ex) {
                     Console.WriteLine("Error");
