@@ -17,20 +17,33 @@ namespace ATMProject {
     /// Interaction logic for WithdrawWindow.xaml
     /// </summary>
     public partial class WithdrawWindow : Window {
-        Window caller;
+        private Window caller;
+        private Customer customer;
 
-        public WithdrawWindow(Window window) {
+        public WithdrawWindow(Window window, Customer customer) {
             InitializeComponent();
             caller = window;
+            this.customer = customer;
         }
 
         private void Window_ContentRendered(object sender, EventArgs e) {
-            caller.Close();
+            caller.Hide();
         }
 
         private void ExitButtonPress(object sender, MouseButtonEventArgs e) {
-            MainWindow window = new MainWindow(this);
-            window.Show();
+            caller.Show();
+            this.Close();
+        }
+
+        private void WithdrawButtonPush(object sender, MouseButtonEventArgs e) {
+            Label label = (Label)sender;
+            int ammount = Convert.ToInt32(label.Content.ToString().Split('£')[1]);
+
+            if (customer.withdraw(ammount)) {
+                Console.WriteLine("Success");
+            } else {
+                Console.WriteLine("Not Enough Funds");
+            }
         }
     }
 }

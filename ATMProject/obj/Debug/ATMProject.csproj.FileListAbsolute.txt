@@ -26,3 +26,9 @@ C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and We
 C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\ExitWindow.baml
 C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\ResetPinWindow.baml
 C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\ViewBalanceWindow.baml
+C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\ViewStatementWindow.g.cs
+C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\ViewStatementWindow.baml
+C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\ResetPinPopup.g.cs
+C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\ResetPinPopup.baml
+C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\SelectCurrencyWindow.g.cs
+C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\SelectCurrencyWindow.baml

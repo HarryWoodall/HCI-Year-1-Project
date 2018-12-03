@@ -20,26 +20,13 @@ namespace ATMProject {
     public partial class ViewBalanceWindow : Window {
 
         private Window caller;
+        private Customer customer;
 
-        public ViewBalanceWindow(Window caller) {
+        public ViewBalanceWindow(Window caller, Customer customer) {
             InitializeComponent();
             this.caller = caller;
-
-            string[] token = new string[3];
-            try {
-                using (StreamReader sr = new StreamReader("../../Assests/Token.txt")) {
-                    for (int i = 0; i < token.Length; i++) {
-                        token[i] = sr.ReadLine();
-                    }
-                    sr.Close();
-                }
-            }
-            catch (Exception ex) {
-                Console.WriteLine("Error");
-                Console.WriteLine(ex.Message);
-            }
-
-            balanceLabel.Content = token[0];
+            this.customer = customer;
+            balanceLabel.Content = customer.getBalance().ToString();
         }
 
         private void Window_ContentRendered(object sender, EventArgs e) {

@@ -20,11 +20,14 @@ namespace ATMProject
     /// </summary>
     public partial class MainWindow : Window
     {
-        Window caller;
-        public MainWindow(Window caller)
+        private Window caller;
+        private Customer customer;
+
+        public MainWindow(Window caller, Customer customer)
         {
             InitializeComponent();
             this.caller = caller;
+            this.customer = customer;
         }
 
         private void Window_ContentRendered(object sender, EventArgs e) {
@@ -32,13 +35,28 @@ namespace ATMProject
         }
 
         private void viewBalanceButtonPush(object sender, MouseButtonEventArgs e) {
-            ViewBalanceWindow viewBalance = new ViewBalanceWindow(this);
+            ViewBalanceWindow viewBalance = new ViewBalanceWindow(this, customer);
             viewBalance.Show();
         }
 
         private void exitButtonPush(object sender, MouseButtonEventArgs e) {
             ExitWindow exit = new ExitWindow(this);
             exit.Show();
+        }
+
+        private void withdrawButtonPush(object sender, MouseButtonEventArgs e) {
+            WithdrawWindow withdraw = new WithdrawWindow(this, customer);
+            withdraw.Show();
+        }
+
+        private void resetPinButtonPush(object sender, MouseButtonEventArgs e) {
+            ResetPinWindow pin = new ResetPinWindow(this, customer);
+            pin.Show();
+        }
+
+        private void viewStatementButtonPush(object sender, MouseButtonEventArgs e) {
+            ViewStatementWindow statementWindow = new ViewStatementWindow(this, customer);
+            statementWindow.Show();
         }
     }
 }

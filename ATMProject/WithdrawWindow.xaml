@@ -22,28 +22,28 @@
             </Grid.ColumnDefinitions>
 
             <Border BorderBrush="Black" BorderThickness="1" Margin="2" Background="#FF1A65A4">
-                <Label Content="£5" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White"/>
+                <Label Content="£5" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" MouseDown="WithdrawButtonPush"/>
             </Border>
             <Border BorderBrush="Black" BorderThickness="1" Margin="2" Grid.Row="2" Background="#FF1A65A4">
-                <Label Content="£20" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White"/>
+                <Label Content="£20" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" MouseDown="WithdrawButtonPush"/>
             </Border>
             <Border BorderBrush="Black" BorderThickness="1" Margin="2" Grid.Row="3" Background="#FF1A65A4">
-                <Label Content="Custom" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White"/>
+                <Label Content="Custom" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" />
             </Border>
             <Border BorderBrush="Black" BorderThickness="1" Margin="2" Grid.Column="1" Background="#FF1A65A4">
-                <Label Content="£50" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White"/>
+                <Label Content="£50" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" MouseDown="WithdrawButtonPush"/>
             </Border>
             <Border BorderBrush="Black" BorderThickness="1" Margin="2" Grid.Column="1" Grid.Row="2" Background="#FF1A65A4">
-                <Label Content="£200" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White"/>
+                <Label Content="£200" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" MouseDown="WithdrawButtonPush"/>
             </Border>
             <Border BorderBrush="Black" BorderThickness="1" Margin="2" Grid.Column="1" Grid.Row="3" Background="#FF1A65A4" MouseDown="ExitButtonPress">
                 <Label Content="Exit" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White"/>
             </Border>
             <Border BorderBrush="Black" BorderThickness="1" Margin="2" Grid.Row="1" Grid.Column="1" Background="#FF1A65A4">
-                <Label Content="£100" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White"/>
+                <Label Content="£100" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" MouseDown="WithdrawButtonPush"/>
             </Border>
             <Border BorderBrush="Black" BorderThickness="1" Margin="2" Grid.Row="1" Background="#FF1A65A4">
-                <Label Content="£10" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White"/>
+                <Label Content="£10" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" MouseDown="WithdrawButtonPush"/>
             </Border>
         </Grid>
 

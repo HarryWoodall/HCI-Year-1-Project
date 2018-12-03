@@ -1,0 +1,26 @@
+﻿<Window x:Class="ATMProject.ResetPinPopup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ATMProject"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True"
+        Title="ResetPinPopup" Height="400" Width="800" MouseDown="popUpPush" Closing="Window_Closing">
+    <Grid>
+        <Border x:Name="successContent" BorderBrush="Black" BorderThickness="5" HorizontalAlignment="Center" Height="100" Margin="0" VerticalAlignment="Center" Width="100" Background="#FF2BE20E"/>
+        <DockPanel x:Name="failedContent" LastChildFill="False" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Hidden">
+            <Border BorderBrush="Black" BorderThickness="10" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="200" CornerRadius="90" Padding="0" Background="#FF4BC937">
+                <Label Content="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="72" Background="{x:Null}" FontWeight="Bold"/>
+            </Border>
+            <Label Content="X" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="100" Margin="15,0" FontWeight="Bold" FontFamily="Gill Sans MT" Foreground="#FFE61010"/>
+            <Border BorderBrush="Black" BorderThickness="10" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="200" CornerRadius="90" Padding="0" Background="#FF4BC937">
+                <Label Content="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="72" FontWeight="Bold"/>
+            </Border>
+        </DockPanel>
+        <Border x:Name="contentBorder" BorderBrush="#FFFF5100" BorderThickness="20"/>
+
+    </Grid>
+</Window>

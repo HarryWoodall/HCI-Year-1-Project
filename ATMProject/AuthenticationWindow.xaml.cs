@@ -56,12 +56,21 @@ namespace ATMProject {
 
         private void confirmButtonPress(object sender, MouseButtonEventArgs e) {
             if (input.Length == 4) {
-                string[] token = new string[3];
+                Customer customer = null;
+                string[] customerDetails = new string[3];
                 try {
                     using (StreamReader sr = new StreamReader("../../Assests/Token.txt")) {
-                        for (int i = 0; i < token.Length; i++) {
-                            token[i] = sr.ReadLine();
+                        for (int i = 0; i < customerDetails.Length; i++) {
+                            customerDetails[i] = sr.ReadLine();
                         }
+                        customer = new Customer(customerDetails[1], customerDetails[2], Convert.ToInt32(customerDetails[0]));
+
+                        while (!sr.EndOfStream) {
+                            string data = sr.ReadLine();
+                            string[] statement = data.Split(',');
+                            customer.addStatement(statement);
+                        }
+
                         sr.Close();
                     }
                 } catch (Exception ex) {
@@ -69,9 +78,9 @@ namespace ATMProject {
                     Console.WriteLine(ex.Message);
                 }
 
-                if (token[1] == input) {
+                if (customer.getPIN() == input) {
                     Console.WriteLine("Authenticated");
-                    MainWindow window = new MainWindow(this);
+                    MainWindow window = new MainWindow(this, customer);
                     window.Show();
                 } else {
                     Console.WriteLine("Invalid Pin");

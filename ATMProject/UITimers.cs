@@ -25,6 +25,10 @@ namespace ATMProject {
             timer.Interval = new TimeSpan(0, 0, 0, 0, 10);
         }
 
+        public DispatcherTimer getTimer() {
+            return timer;
+        }
+
         private void colorTimerTick(object sender, EventArgs e) {
             Control control = (Control)this.control;
             if (timerTickCount >= 2 && control.Background == naturalColor) {
@@ -52,6 +56,7 @@ namespace ATMProject {
             timer.Start();
         }
 
+
         private void exitTimerTick(object sender, EventArgs e) {
             Window window = (Window)control;
             AuthenticationWindow authWindow = new AuthenticationWindow();
@@ -72,6 +77,25 @@ namespace ATMProject {
             this.control = control;
             timerTickTarget = time;
             timer.Tick += exitTimerTick;
+            timer.Start();
+        }
+
+
+        private void popUpWindowTimer(object sender, EventArgs e) {
+            Window window = (Window)control;
+
+            if (timerTickCount >= timerTickTarget) {
+                window.Close();
+                timer.Stop();
+            } else {
+                timerTickCount++;
+            }
+        }
+
+        public void popUpWindowTimer(object window, int time) {
+            this.control = window;
+            timerTickTarget = time;
+            timer.Tick += popUpWindowTimer;
             timer.Start();
         }
     }

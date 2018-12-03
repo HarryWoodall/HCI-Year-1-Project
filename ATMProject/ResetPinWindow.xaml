@@ -7,8 +7,41 @@
         mc:Ignorable="d"
         WindowState="Maximized"
         WindowStyle="None"
-        Title="ResetPinWindow" Height="1024" Width="1280" Background="Black">
+        Title="ResetPinWindow" Height="1024" Width="1280" Background="Black" ContentRendered="Window_ContentRendered">
     <Grid Width="1280" Height="1024" Background="White">
-        
+        <Grid x:Name="authenticator" Height="710" Margin="345,157" VerticalAlignment="Center" Width="590" Visibility="Visible" HorizontalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Content="7" Margin="10" Grid.Row="1" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF2D509B" Foreground="White" MouseDown="numericButtonPress"/>
+            <Label Content="8" Margin="10" Grid.Row="1" FontSize="72" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF2D509B" Foreground="White" MouseDown="numericButtonPress"/>
+            <Label Content="9" Margin="10" Grid.Row="1" FontSize="72" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF2D509B" Foreground="White" MouseDown="numericButtonPress"/>
+            <Label Content="4" Margin="10" Grid.Row="2" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF2D509B" Foreground="White" MouseDown="numericButtonPress"/>
+            <Label Content="5" Margin="10" Grid.Row="2" FontSize="72" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF2D509B" Foreground="White" MouseDown="numericButtonPress"/>
+            <Label Content="6" Margin="10" Grid.Row="2" FontSize="72" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF2D509B" Foreground="White" MouseDown="numericButtonPress"/>
+            <Label Content="1" Margin="10" Grid.Row="3" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF2D509B" Foreground="White" MouseDown="numericButtonPress"/>
+            <Label Content="2" Margin="10" Grid.Row="3" FontSize="72" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF2D509B" Foreground="White" MouseDown="numericButtonPress"/>
+            <Label Content="3" Margin="10" Grid.Row="3" FontSize="72" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF2D509B" Foreground="White" MouseDown="numericButtonPress"/>
+            <Label Content="X" Margin="10" Grid.Row="4" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFD86618" Foreground="White" MouseDown="cancelButtonPress" FontFamily="Segoe UI Semibold"/>
+            <Label Content="0" Margin="10" Grid.Row="4" FontSize="72" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF2D509B" Foreground="White" MouseDown="numericButtonPress"/>
+            <Label x:Name="confirmButton" Content="✔" Margin="10" Grid.Row="4" FontSize="72" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFB6B6B6" Foreground="#FFC9C9C9" MouseDown="confirmButtonPress"/>
+            <TextBox x:Name="authenticatorOutput" Margin="10" TextWrapping="Wrap" Grid.ColumnSpan="3" FontSize="150" Padding="68,1,1,1" FontFamily="Consolas" FontWeight="Bold" TextDecorations="{x:Null}" BorderThickness="5" BorderBrush="Black"/>
+        </Grid>
+        <Border x:Name="firstBorder" BorderBrush="Black" BorderThickness="5" HorizontalAlignment="Left" Height="100" Margin="366,52,0,0" VerticalAlignment="Top" Width="100" CornerRadius="90" Padding="0" Background="#FF4BC937">
+            <Label x:Name="firstLabel" Content="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="48"/>
+        </Border>
+        <Border x:Name="secondBorder" BorderBrush="#7F000000" BorderThickness="5" HorizontalAlignment="Left" Height="100" Margin="471,52,0,0" VerticalAlignment="Top" Width="100" CornerRadius="90" Padding="0" Background="#7FC1C1C1">
+            <Label x:Name="secondLabel" Content="2" FontSize="48" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#7F000000"/>
+        </Border>
+
     </Grid>
 </Window>

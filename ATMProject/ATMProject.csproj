@@ -54,15 +54,25 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Customer.cs" />
     <Compile Include="ExitWindow.xaml.cs">
       <DependentUpon>ExitWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPinPopup.xaml.cs">
+      <DependentUpon>ResetPinPopup.xaml</DependentUpon>
     </Compile>
     <Compile Include="ResetPinWindow.xaml.cs">
       <DependentUpon>ResetPinWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SelectCurrencyWindow.xaml.cs">
+      <DependentUpon>SelectCurrencyWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UITimers.cs" />
     <Compile Include="ViewBalanceWindow.xaml.cs">
       <DependentUpon>ViewBalanceWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStatementWindow.xaml.cs">
+      <DependentUpon>ViewStatementWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="WithdrawAmmountWindow.xaml.cs">
       <DependentUpon>WithdrawAmmountWindow.xaml</DependentUpon>
@@ -93,11 +103,23 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="ResetPinPopup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ResetPinWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="SelectCurrencyWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ViewBalanceWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewStatementWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -137,19 +159,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Assests\Icons\withdraw.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Assests\Icons\VeiwStatement.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Assests\Icons\VeiwBalance.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Assests\Token.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Assests\Icons\White-Tick.png" />
     <Content Include="Assests\Sounds\Error_Select.wav" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
