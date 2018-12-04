@@ -67,7 +67,7 @@ namespace ATMProject {
             descriptionLabel.FontSize = fontSize;
             descriptionLabel.HorizontalAlignment = HorizontalAlignment.Stretch;
             descriptionLabel.Height = 100;
-            descriptionLabel.HorizontalContentAlignment = HorizontalAlignment.Left;
+            descriptionLabel.HorizontalContentAlignment = HorizontalAlignment.Center;
             descriptionLabel.VerticalContentAlignment = VerticalAlignment.Center;
             descriptionLabel.Content = statement[1];
             grid.Children.Add(descriptionLabel);

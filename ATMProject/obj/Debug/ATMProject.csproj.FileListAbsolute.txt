@@ -32,3 +32,37 @@ C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and We
 C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\ResetPinPopup.baml
 C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\SelectCurrencyWindow.g.cs
 C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\SelectCurrencyWindow.baml
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\bin\Debug\ATMProject.exe.config
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\bin\Debug\ATMProject.exe
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\bin\Debug\ATMProject.pdb
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\obj\Debug\ATMProject.csprojResolveAssemblyReference.cache
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\obj\Debug\AuthenticationWindow.g.cs
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\obj\Debug\ExitWindow.g.cs
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\obj\Debug\MainWindow.g.cs
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\obj\Debug\ResetPinPopup.g.cs
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\obj\Debug\ResetPinWindow.g.cs
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\obj\Debug\SelectCurrencyWindow.g.cs
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\obj\Debug\ViewBalanceWindow.g.cs
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\obj\Debug\ViewStatementWindow.g.cs
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\obj\Debug\App.g.cs
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\obj\Debug\ATMProject_Content.g.cs
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\obj\Debug\ATMProject_MarkupCompile.cache
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\obj\Debug\ATMProject_MarkupCompile.lref
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\obj\Debug\AuthenticationWindow.baml
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\obj\Debug\ExitWindow.baml
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\obj\Debug\MainWindow.baml
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\obj\Debug\ResetPinPopup.baml
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\obj\Debug\ResetPinWindow.baml
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\obj\Debug\SelectCurrencyWindow.baml
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\obj\Debug\ViewBalanceWindow.baml
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\obj\Debug\ViewStatementWindow.baml
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\obj\Debug\ATMProject.g.resources
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\obj\Debug\ATMProject.Properties.Resources.resources
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\obj\Debug\ATMProject.csproj.GenerateResource.cache
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\obj\Debug\ATMProject.csproj.CoreCompileInputs.cache
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\obj\Debug\ATMProject.exe
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\obj\Debug\ATMProject.pdb
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\obj\Debug\WithdrawWindow.g.cs
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\obj\Debug\WithdrawWindow.baml
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\obj\Debug\WithdrawAmountPopup.g.cs
+F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\obj\Debug\WithdrawAmountPopup.baml

@@ -9,6 +9,13 @@
         WindowStyle="None"
         Title="ViewStatementWindow" Height="1024" Width="1280" Background="Black" ContentRendered="Window_ContentRendered">
     <Grid Width="1280" Height="1024" Background="White">
-        <ListBox x:Name="statementList" HorizontalAlignment="Center" Height="622" Margin="0" VerticalAlignment="Center" Width="1040" BorderBrush="#FF646464" HorizontalContentAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Disabled"/>
+        <ListBox x:Name="statementList" HorizontalAlignment="Center" Height="622" Margin="0" VerticalAlignment="Center" Width="1040" BorderBrush="#FF646464" HorizontalContentAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <ListBox.Resources>
+                <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Transparent" />
+                <SolidColorBrush x:Key="{x:Static SystemColors.HighlightTextBrushKey}" Color="Black" />
+                <SolidColorBrush x:Key="{x:Static SystemColors.ControlBrushKey}" Color="Transparent" />
+                <SolidColorBrush x:Key="{x:Static SystemColors.InactiveSelectionHighlightBrushKey}" Color="Transparent" />
+            </ListBox.Resources>
+        </ListBox>
     </Grid>
 </Window>

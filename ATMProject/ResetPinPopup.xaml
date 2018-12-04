@@ -10,7 +10,9 @@
         AllowsTransparency="True"
         Title="ResetPinPopup" Height="400" Width="800" MouseDown="popUpPush" Closing="Window_Closing">
     <Grid>
-        <Border x:Name="successContent" BorderBrush="Black" BorderThickness="5" HorizontalAlignment="Center" Height="100" Margin="0" VerticalAlignment="Center" Width="100" Background="#FF2BE20E"/>
+        <Border x:Name="successContent" BorderBrush="Black" BorderThickness="0" HorizontalAlignment="Center" Height="200" Margin="0" VerticalAlignment="Center" Width="200" Background="#FF2BE20E">
+            <Label Content="✔" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="72" Foreground="White"/>
+        </Border>
         <DockPanel x:Name="failedContent" LastChildFill="False" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Hidden">
             <Border BorderBrush="Black" BorderThickness="10" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="200" CornerRadius="90" Padding="0" Background="#FF4BC937">
                 <Label Content="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="72" Background="{x:Null}" FontWeight="Bold"/>
@@ -20,7 +22,8 @@
                 <Label Content="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="72" FontWeight="Bold"/>
             </Border>
         </DockPanel>
-        <Border x:Name="contentBorder" BorderBrush="#FFFF5100" BorderThickness="20"/>
+        <Border x:Name="contentBorder" BorderBrush="#FFFF5100" BorderThickness="20">
+        </Border>
 
     </Grid>
 </Window>

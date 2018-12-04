@@ -38,10 +38,10 @@ namespace ATMProject
         }
 
         private void confirmButtonPress(object sender, MouseButtonEventArgs e) {
-            confirmButton.Background = new SolidColorBrush(Color.FromArgb(0xFF, 0xB6, 0xB6, 0xB6));
-            authenticatorOutput.Clear();
-
             if (authenticatorOutput.Text.Length == 4) {
+                confirmButton.Background = new SolidColorBrush(Color.FromArgb(0xFF, 0xB6, 0xB6, 0xB6));
+                authenticatorOutput.Clear();
+
                 if (!onSecondAttempt) {
                     onSecondAttempt = true;
 
@@ -62,6 +62,9 @@ namespace ATMProject
                         customer.setPIN(firstAttempt);
                         Console.WriteLine(customer.getPIN());
                     } else {
+                        onSecondAttempt = false;
+                        firstAttempt = "";
+                        secondAttempt = "";
                         Console.WriteLine("PIN missmatch");
                         popUp = new ResetPinPopup(this, false);
                         popUp.Show();

@@ -74,8 +74,8 @@
     <Compile Include="ViewStatementWindow.xaml.cs">
       <DependentUpon>ViewStatementWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WithdrawAmmountWindow.xaml.cs">
-      <DependentUpon>WithdrawAmmountWindow.xaml</DependentUpon>
+    <Compile Include="WithdrawAmountPopup.xaml.cs">
+      <DependentUpon>WithdrawAmountPopup.xaml</DependentUpon>
     </Compile>
     <Compile Include="WithdrawWindow.xaml.cs">
       <DependentUpon>WithdrawWindow.xaml</DependentUpon>
@@ -123,7 +123,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="WithdrawAmmountWindow.xaml">
+    <Page Include="WithdrawAmountPopup.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

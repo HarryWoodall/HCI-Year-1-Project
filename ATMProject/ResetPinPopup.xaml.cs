@@ -29,12 +29,12 @@ namespace ATMProject
             this.isSuccessful = isSuccessful;
 
             timer = new UITimers();
-            timer.popUpWindowTimer(this, 100);
+            timer.popUpWindowTimer(this, 50);
 
             if (isSuccessful) {
                 successContent.Visibility = Visibility.Visible;
                 failedContent.Visibility = Visibility.Hidden;
-                contentBorder.BorderBrush = new SolidColorBrush(Color.FromArgb(0xFF, 0x4B, 0xC9, 0x37));
+                contentBorder.BorderBrush = new SolidColorBrush(Color.FromArgb(0xFF, 0x2B, 0xE2, 0x0E));
             } else {
                 successContent.Visibility = Visibility.Hidden;
                 failedContent.Visibility = Visibility.Visible;
