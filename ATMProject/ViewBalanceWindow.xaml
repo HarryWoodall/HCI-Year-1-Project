@@ -9,17 +9,14 @@
         WindowStyle="None"
         Title="ViewBalanceWindow" Height="1024" Width="1280" Background="Black" ContentRendered="Window_ContentRendered">
     <Grid Width="1280" Height="1024" Background="White">
-        <Grid HorizontalAlignment="Left" Height="648" Margin="156,108,0,0" VerticalAlignment="Top" Width="930">
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            <Label Content="Current Balance" Margin="10" FontSize="100" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-            <Label x:Name="balanceLabel" Content="Label" Margin="10" Grid.Row="1" FontSize="150" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-        </Grid>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="140" Margin="444,816,0,0" VerticalAlignment="Top" Width="276" Background="#FF2D509B" MouseDown="backButtonPush">
-            <Label Content="Back" FontSize="72" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MouseDown="backButtonPush"/>
+        <Border BorderBrush="#FF092D4B" BorderThickness="0,150">
+            <Border BorderThickness="1" Margin="1015,605,88,15" Background="#FF092D4B" MouseDown="exitButtonPush" Width="177" Height="107">
+                <Image Height="90" Width="90" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Source="Assests/Icons/Exit.png"/>
+            </Border>
         </Border>
-
+        <Label x:Name="balanceLabel" Content="Label" Margin="0" FontSize="150" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Border Margin="100,200,1042,704" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF092D4B" Width="140" Height="120" MouseDown="backButtonPush">
+            <Image Source="Assests/Icons/White-Arrow.png" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="90" Stretch="Fill"/>
+        </Border>
     </Grid>
 </Window>

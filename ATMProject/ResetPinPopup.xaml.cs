@@ -29,7 +29,7 @@ namespace ATMProject
             this.isSuccessful = isSuccessful;
 
             timer = new UITimers();
-            timer.popUpWindowTimer(this, 50);
+            timer.popUpWindowTimer(this, 20);
 
             if (isSuccessful) {
                 successContent.Visibility = Visibility.Visible;

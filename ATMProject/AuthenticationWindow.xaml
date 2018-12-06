@@ -9,6 +9,11 @@
         WindowStyle="None"
         Title="AuthenticationWindow" Height="1024" Width="1280" Background="Black">
     <Grid Width="1280" Height="1024" Background="White">
+        <Border BorderBrush="#FF092D4B" BorderThickness="0,150">
+            <Border x:Name="ExitButton" BorderThickness="1" Margin="1015,605,88,15" Background="#FF092D4B" MouseDown="exitButtonPush" Width="177" Height="107" Visibility="Hidden">
+                <Image Height="90" Width="90" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Source="Assests/Icons/Exit.png"/>
+            </Border>
+        </Border>
         <Grid x:Name="authenticator" HorizontalAlignment="Center" Height="710" Margin="0" VerticalAlignment="Center" Width="590" Visibility="Visible">
             <Grid.RowDefinitions>
                 <RowDefinition Height="200"/>
@@ -22,17 +27,17 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Label Content="7" Margin="10" Grid.Row="1" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF2D509B" Foreground="White" MouseDown="numericButtonPress"/>
-            <Label Content="8" Margin="10" Grid.Row="1" FontSize="72" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF2D509B" Foreground="White" MouseDown="numericButtonPress"/>
-            <Label Content="9" Margin="10" Grid.Row="1" FontSize="72" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF2D509B" Foreground="White" MouseDown="numericButtonPress"/>
-            <Label Content="4" Margin="10" Grid.Row="2" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF2D509B" Foreground="White" MouseDown="numericButtonPress"/>
-            <Label Content="5" Margin="10" Grid.Row="2" FontSize="72" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF2D509B" Foreground="White" MouseDown="numericButtonPress"/>
-            <Label Content="6" Margin="10" Grid.Row="2" FontSize="72" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF2D509B" Foreground="White" MouseDown="numericButtonPress"/>
-            <Label Content="1" Margin="10" Grid.Row="3" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF2D509B" Foreground="White" MouseDown="numericButtonPress"/>
-            <Label Content="2" Margin="10" Grid.Row="3" FontSize="72" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF2D509B" Foreground="White" MouseDown="numericButtonPress"/>
-            <Label Content="3" Margin="10" Grid.Row="3" FontSize="72" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF2D509B" Foreground="White" MouseDown="numericButtonPress"/>
+            <Label Content="7" Margin="10" Grid.Row="1" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0A8DD8" Foreground="White" MouseDown="numericButtonPress"/>
+            <Label Content="8" Margin="10" Grid.Row="1" FontSize="72" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0A8DD8" Foreground="White" MouseDown="numericButtonPress"/>
+            <Label Content="9" Margin="10" Grid.Row="1" FontSize="72" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0A8DD8" Foreground="White" MouseDown="numericButtonPress"/>
+            <Label Content="4" Margin="10" Grid.Row="2" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0A8DD8" Foreground="White" MouseDown="numericButtonPress"/>
+            <Label Content="5" Margin="10" Grid.Row="2" FontSize="72" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0A8DD8" Foreground="White" MouseDown="numericButtonPress"/>
+            <Label Content="6" Margin="10" Grid.Row="2" FontSize="72" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0A8DD8" Foreground="White" MouseDown="numericButtonPress"/>
+            <Label Content="1" Margin="10" Grid.Row="3" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0A8DD8" Foreground="White" MouseDown="numericButtonPress"/>
+            <Label Content="2" Margin="10" Grid.Row="3" FontSize="72" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0A8DD8" Foreground="White" MouseDown="numericButtonPress"/>
+            <Label Content="3" Margin="10" Grid.Row="3" FontSize="72" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0A8DD8" Foreground="White" MouseDown="numericButtonPress"/>
             <Label Content="CL" Margin="10" Grid.Row="4" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFD86618" Foreground="White" MouseDown="cancelButtonPress"/>
-            <Label Content="0" Margin="10" Grid.Row="4" FontSize="72" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF2D509B" Foreground="White" MouseDown="numericButtonPress"/>
+            <Label Content="0" Margin="10" Grid.Row="4" FontSize="72" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0A8DD8" Foreground="White" MouseDown="numericButtonPress"/>
             <Label x:Name="confirmButton" Content="OK" Margin="10" Grid.Row="4" FontSize="72" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFB6B6B6" Foreground="#FFC9C9C9" MouseDown="confirmButtonPress"/>
             <TextBox x:Name="authenticatorOutput" Margin="10" TextWrapping="Wrap" Grid.ColumnSpan="3" FontSize="150" Padding="115,1,1,1" FontFamily="Consolas" FontWeight="Bold" TextDecorations="{x:Null}" BorderThickness="5" BorderBrush="Black"/>
         </Grid>

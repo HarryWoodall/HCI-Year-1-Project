@@ -77,6 +77,9 @@
     <Compile Include="WithdrawAmountPopup.xaml.cs">
       <DependentUpon>WithdrawAmountPopup.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WithdrawErrorPopup.xaml.cs">
+      <DependentUpon>WithdrawErrorPopup.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WithdrawWindow.xaml.cs">
       <DependentUpon>WithdrawWindow.xaml</DependentUpon>
     </Compile>
@@ -127,6 +130,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="WithdrawErrorPopup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WithdrawWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -163,6 +170,29 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Assests\Icons\White-Tick.png" />
+    <Resource Include="Assests\Icons\Australia-Flag.png" />
+    <Resource Include="Assests\Icons\Back-Arrow.png" />
+    <Resource Include="Assests\Icons\Black-Tick.png" />
+    <Resource Include="Assests\Icons\Change.png" />
+    <Resource Include="Assests\Icons\ChangePin.png" />
+    <Resource Include="Assests\Icons\checked-test.png" />
+    <Resource Include="Assests\Icons\China-Flag.png" />
+    <Resource Include="Assests\Icons\EU-Flag.png" />
+    <Resource Include="Assests\Icons\Exit.png" />
+    <Resource Include="Assests\Icons\File.png" />
+    <Resource Include="Assests\Icons\Japan-Flag.png" />
+    <Resource Include="Assests\Icons\Lock.png" />
+    <Resource Include="Assests\Icons\Magnifier.png" />
+    <Resource Include="Assests\Icons\Poland-Flag.png" />
+    <Resource Include="Assests\Icons\UK-Flag.png" />
+    <Resource Include="Assests\Icons\United-Emirates-Flag.png" />
+    <Resource Include="Assests\Icons\USA-Flag.png" />
+    <Resource Include="Assests\Icons\ViewBalance.png" />
+    <Resource Include="Assests\Icons\ViewStatement.png" />
+    <Resource Include="Assests\Icons\Wallet.png" />
+    <Resource Include="Assests\Icons\Withdraw.png" />
+    <Resource Include="Assests\Icons\White-Arrow.png" />
+    <Resource Include="Assests\Icons\Warning.png" />
     <Content Include="Assests\Sounds\Error_Select.wav" />
   </ItemGroup>
   <ItemGroup />

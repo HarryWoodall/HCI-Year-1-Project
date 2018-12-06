@@ -9,7 +9,12 @@
         WindowStyle="None"
         Title="ViewStatementWindow" Height="1024" Width="1280" Background="Black" ContentRendered="Window_ContentRendered">
     <Grid Width="1280" Height="1024" Background="White">
-        <ListBox x:Name="statementList" HorizontalAlignment="Center" Height="622" Margin="0" VerticalAlignment="Center" Width="1040" BorderBrush="#FF646464" HorizontalContentAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+        <Border BorderBrush="#FF092D4B" BorderThickness="0,150">
+            <Border BorderThickness="0" Margin="1015,605,88,15" Background="#FF092D4B" MouseDown="exitButtonPush" Width="177" Height="107">
+                <Image Height="90" Width="90" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Source="Assests/Icons/Exit.png"/>
+            </Border>
+        </Border>
+        <ListBox x:Name="statementList" HorizontalAlignment="Center" Height="560" Margin="0" VerticalAlignment="Center" Width="680" BorderBrush="{x:Null}" HorizontalContentAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Disabled" BorderThickness="0" Background="#FF0A8DD8">
             <ListBox.Resources>
                 <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Transparent" />
                 <SolidColorBrush x:Key="{x:Static SystemColors.HighlightTextBrushKey}" Color="Black" />
@@ -17,5 +22,8 @@
                 <SolidColorBrush x:Key="{x:Static SystemColors.InactiveSelectionHighlightBrushKey}" Color="Transparent" />
             </ListBox.Resources>
         </ListBox>
+        <Border Margin="100,200,1042,704" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF092D4B" Width="140" Height="120" MouseDown="backButtonPush">
+            <Image Source="Assests/Icons/White-Arrow.png" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="90" Stretch="Fill"/>
+        </Border>
     </Grid>
 </Window>

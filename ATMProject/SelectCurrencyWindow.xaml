@@ -9,7 +9,12 @@
         WindowStyle="None"
         Title="SelectCurrencyWindow" Height="1024" Width="1280" Background="Black">
     <Grid Width="1280" Height="1024" Background="White">
-        <Grid HorizontalAlignment="Left" Height="598" Margin="294,202,0,0" VerticalAlignment="Top" Width="658">
+        <Border BorderBrush="#FF092D4B" BorderThickness="0,150">
+            <Border BorderThickness="0" Margin="1015,605,88,15" Background="#FF092D4B" MouseDown="exitButtonPush" Width="177" Height="107">
+                <Image Height="90" Width="90" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Source="Assests/Icons/Exit.png"/>
+            </Border>
+        </Border>
+        <Grid HorizontalAlignment="Center" Height="598" Margin="0" VerticalAlignment="Center" Width="522">
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition/>
@@ -20,6 +25,38 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
+            <Canvas Margin="3" Background="#FF0A8DD8">
+                <Image Margin="0" Source="Assests/Icons/UK-Flag.png" Canvas.Left="85" Canvas.Top="10" Height="110" Width="146"/>
+                <Label Content="£" FontSize="72" Height="110" Width="75" Canvas.Left="10" Canvas.Top="10" Foreground="White" Background="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="0"/>
+            </Canvas>
+            <Canvas Margin="3" Background="#FF0A8DD8" Grid.Column="1">
+                <Image Margin="0" Source="Assests/Icons/USA-Flag.png" Canvas.Left="85" Canvas.Top="10" Height="110" Width="146"/>
+                <Label Content="$" FontSize="72" Height="110" Width="75" Canvas.Left="10" Canvas.Top="10" Foreground="White" Background="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="0"/>
+            </Canvas>
+            <Canvas Margin="3" Background="#FF0A8DD8" Grid.Row="1">
+                <Image Margin="0" Source="Assests/Icons/EU-Flag.png" Canvas.Left="85" Canvas.Top="10" Height="110" Width="146"/>
+                <Label Content="€" FontSize="72" Height="110" Width="75" Canvas.Left="10" Canvas.Top="10" Foreground="White" Background="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="0"/>
+            </Canvas>
+            <Canvas Margin="3" Background="#FF0A8DD8" Grid.Row="1" Grid.Column="1">
+                <Image Margin="0" Source="Assests/Icons/Australia-Flag.png" Canvas.Left="85" Canvas.Top="10" Height="110" Width="146"/>
+                <Label Content="$" FontSize="72" Height="110" Width="75" Canvas.Left="10" Canvas.Top="10" Foreground="White" Background="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="0"/>
+            </Canvas>
+            <Canvas Margin="3" Background="#FF0A8DD8" Grid.Row="2">
+                <Image Margin="0" Source="Assests/Icons/Poland-Flag.png" Canvas.Left="85" Canvas.Top="10" Height="110" Width="146"/>
+                <Label Content="zł" FontSize="72" Height="110" Width="75" Canvas.Left="10" Canvas.Top="10" Foreground="White" Background="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="0"/>
+            </Canvas>
+            <Canvas Margin="3" Background="#FF0A8DD8" Grid.Row="2" Grid.Column="1">
+                <Image Source="Assests/Icons/United-Emirates-Flag.png" Canvas.Left="105" Canvas.Top="25" Height="80" Width="105" Stretch="Fill"/>
+                <Label Content="د.إ" FontSize="72" Height="110" Width="75" Canvas.Left="10" Canvas.Top="10" Foreground="White" Background="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="0"/>
+            </Canvas>
+            <Canvas Margin="3" Background="#FF0A8DD8" Grid.Row="3">
+                <Image Margin="0" Source="Assests/Icons/China-Flag.png" Canvas.Left="85" Canvas.Top="10" Height="110" Width="146"/>
+                <Label Content="¥" FontSize="72" Height="110" Width="75" Canvas.Left="10" Canvas.Top="10" Foreground="White" Background="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="0"/>
+            </Canvas>
+            <Canvas Margin="3" Background="#FF0A8DD8" Grid.Row="3" Grid.Column="1">
+                <Image Margin="0" Source="Assests/Icons/Japan-Flag.png" Canvas.Left="85" Canvas.Top="10" Height="110" Width="146"/>
+                <Label Content="¥" FontSize="72" Height="110" Width="75" Canvas.Left="10" Canvas.Top="10" Foreground="White" Background="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="0"/>
+            </Canvas>
         </Grid>
 
     </Grid>

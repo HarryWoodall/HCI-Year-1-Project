@@ -55,6 +55,7 @@ namespace ATMProject {
             int fontSize = 48;
 
             Label dateLabel = new Label();
+            dateLabel.Foreground = new SolidColorBrush(Color.FromArgb(0xFF, 0xFF, 0xFF, 0xFF));
             dateLabel.FontSize = fontSize;
             dateLabel.HorizontalAlignment = HorizontalAlignment.Stretch;
             dateLabel.Height = 100;
@@ -64,6 +65,7 @@ namespace ATMProject {
             grid.Children.Add(dateLabel);
 
             Label descriptionLabel = new Label();
+            descriptionLabel.Foreground = new SolidColorBrush(Color.FromArgb(0xFF, 0xFF, 0xFF, 0xFF));
             descriptionLabel.FontSize = fontSize;
             descriptionLabel.HorizontalAlignment = HorizontalAlignment.Stretch;
             descriptionLabel.Height = 100;
@@ -74,6 +76,7 @@ namespace ATMProject {
             Grid.SetColumn(descriptionLabel, 1);
 
             Label ammountLabel = new Label();
+            ammountLabel.Foreground = new SolidColorBrush(Color.FromArgb(0xFF, 0xFF, 0xFF, 0xFF));
             ammountLabel.FontSize = fontSize;
             ammountLabel.HorizontalAlignment = HorizontalAlignment.Stretch;
             ammountLabel.Height = 100;
@@ -84,6 +87,16 @@ namespace ATMProject {
             Grid.SetColumn(ammountLabel, 2);
 
             return grid;
+        }
+
+        private void exitButtonPush(object sender, MouseButtonEventArgs e) {
+            ExitWindow exit = new ExitWindow(this);
+            exit.Show();
+        }
+
+        private void backButtonPush(object sender, MouseButtonEventArgs e) {
+            caller.Show();
+            this.Close();
         }
     }
 }

@@ -9,7 +9,12 @@
         WindowStyle="None"
         Title="WithdrawWindow" Height="1024" Width="1280" Background="Black" ContentRendered="Window_ContentRendered">
     <Grid Width="1280" Height="1024" Background="White">
-        <Grid HorizontalAlignment="Center" Height="642" Margin="0" VerticalAlignment="Center" Width="740">
+        <Border BorderBrush="#FF092D4B" BorderThickness="0,150">
+            <Border BorderThickness="0" Margin="1015,605,88,15" Background="#FF092D4B" MouseDown="exitButtonPush" Width="177" Height="107">
+                <Image Height="90" Width="90" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Source="Assests/Icons/Exit.png"/>
+            </Border>
+        </Border>
+        <Grid HorizontalAlignment="Center" Height="642" Margin="0" VerticalAlignment="Center" Width="674">
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition/>
@@ -21,31 +26,33 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-            <Border BorderBrush="Black" BorderThickness="1" Margin="2" Background="#FF1A65A4">
+            <Border BorderBrush="Black" BorderThickness="0" Margin="3" Background="#FF0A8DD8">
                 <Label Content="£5" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" MouseDown="WithdrawButtonPush"/>
             </Border>
-            <Border BorderBrush="Black" BorderThickness="1" Margin="2" Grid.Row="2" Background="#FF1A65A4">
+            <Border BorderBrush="Black" BorderThickness="0" Margin="3" Grid.Row="2" Background="#FF0A8DD8">
                 <Label Content="£20" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" MouseDown="WithdrawButtonPush"/>
             </Border>
-            <Border BorderBrush="Black" BorderThickness="1" Margin="2" Grid.Row="3" Background="#FF1A65A4">
-                <Label Content="Custom" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" />
-            </Border>
-            <Border BorderBrush="Black" BorderThickness="1" Margin="2" Grid.Column="1" Background="#FF1A65A4">
+            <Border BorderBrush="Black" BorderThickness="0" Margin="3" Grid.Row="3" Background="#FF0A8DD8">
                 <Label Content="£50" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" MouseDown="WithdrawButtonPush"/>
             </Border>
-            <Border BorderBrush="Black" BorderThickness="1" Margin="2" Grid.Column="1" Grid.Row="2" Background="#FF1A65A4">
-                <Label Content="£200" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" MouseDown="WithdrawButtonPush"/>
+            <Border BorderBrush="Black" BorderThickness="0" Margin="3" Grid.Row="3" Grid.Column="1" Background="#FF0A8DD8">
+                <Label Content="..." FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" MouseDown="customAmountButtonPush" />
             </Border>
-            <Border BorderBrush="Black" BorderThickness="1" Margin="2" Grid.Column="1" Grid.Row="3" Background="#FF1A65A4" MouseDown="ExitButtonPress">
-                <Label Content="Exit" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White"/>
-            </Border>
-            <Border BorderBrush="Black" BorderThickness="1" Margin="2" Grid.Row="1" Grid.Column="1" Background="#FF1A65A4">
+            <Border BorderBrush="Black" BorderThickness="0" Margin="3" Grid.Column="1" Background="#FF0A8DD8">
                 <Label Content="£100" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" MouseDown="WithdrawButtonPush"/>
             </Border>
-            <Border BorderBrush="Black" BorderThickness="1" Margin="2" Grid.Row="1" Background="#FF1A65A4">
+            <Border BorderBrush="Black" BorderThickness="0" Margin="3" Grid.Column="1" Grid.Row="2" Background="#FF0A8DD8">
+                <Label Content="£200" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" MouseDown="WithdrawButtonPush"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0" Margin="3" Grid.Row="1" Grid.Column="1" Background="#FF0A8DD8">
+                <Label Content="£150" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" MouseDown="WithdrawButtonPush"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0" Margin="3" Grid.Row="1" Background="#FF0A8DD8">
                 <Label Content="£10" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" MouseDown="WithdrawButtonPush"/>
             </Border>
         </Grid>
-
+        <Border Margin="100,200,1042,704" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF092D4B" Width="140" Height="120" MouseDown="backButtonPush">
+            <Image Source="Assests/Icons/White-Arrow.png" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="90" Stretch="Fill"/>
+        </Border>
     </Grid>
 </Window>

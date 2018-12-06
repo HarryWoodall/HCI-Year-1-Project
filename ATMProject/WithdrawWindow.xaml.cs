@@ -19,6 +19,7 @@ namespace ATMProject {
     public partial class WithdrawWindow : Window {
         private Window caller;
         private Customer customer;
+        private int amount;
 
         public WithdrawWindow(Window window, Customer customer) {
             InitializeComponent();
@@ -30,11 +31,6 @@ namespace ATMProject {
             caller.Hide();
         }
 
-        private void ExitButtonPress(object sender, MouseButtonEventArgs e) {
-            caller.Show();
-            this.Close();
-        }
-
         private void WithdrawButtonPush(object sender, MouseButtonEventArgs e) {
             Label label = (Label)sender;
             int ammount = Convert.ToInt32(label.Content.ToString().Split('£')[1]);
@@ -44,6 +40,25 @@ namespace ATMProject {
             } else {
                 Console.WriteLine("Not Enough Funds");
             }
+        }
+
+        private void exitButtonPush(object sender, MouseButtonEventArgs e) {
+            ExitWindow exit = new ExitWindow(this);
+            exit.Show();
+        }
+
+        private void backButtonPush(object sender, MouseButtonEventArgs e) {
+            caller.Show();
+            this.Close();
+        }
+
+        private void customAmountButtonPush(object sender, MouseButtonEventArgs e) {
+            WithdrawAmmountPopup popup = new WithdrawAmmountPopup(this, customer);
+            popup.ShowDialog();
+        }
+
+        public void setAmount(int amount) {
+            this.amount = amount;
         }
     }
 }

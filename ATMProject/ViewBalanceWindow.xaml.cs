@@ -37,5 +37,10 @@ namespace ATMProject {
             caller.Show();
             this.Close();
         }
+
+        private void exitButtonPush(object sender, MouseButtonEventArgs e) {
+            ExitWindow exit = new ExitWindow(this);
+            exit.Show();
+        }
     }
 }

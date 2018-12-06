@@ -67,6 +67,17 @@ namespace ATMProject
                         secondAttempt = "";
                         Console.WriteLine("PIN missmatch");
                         popUp = new ResetPinPopup(this, false);
+
+                        secondBorder.Background = firstBorder.Background;
+                        secondBorder.BorderBrush = secondBorder.BorderBrush;
+                        secondLabel.Background = firstLabel.Background;
+                        secondLabel.Foreground = firstLabel.Foreground;
+
+                        firstBorder.Background = new SolidColorBrush(Color.FromArgb(0xFF, 0x4B, 0xC9, 0x37));
+                        firstBorder.BorderBrush = new SolidColorBrush(Color.FromArgb(0xFF, 0x00, 0x00, 0x00));
+                        firstLabel.Background = new SolidColorBrush(Color.FromArgb(0x00, 0x00, 0x00, 0x00));
+                        firstLabel.Foreground = new SolidColorBrush(Color.FromArgb(0xFF, 0x00, 0x00, 0x00));
+
                         popUp.Show();
                     }
                 }
@@ -103,6 +114,16 @@ namespace ATMProject
 
         public Window getCaller() {
             return caller;
+        }
+
+        private void exitButtonPush(object sender, MouseButtonEventArgs e) {
+            ExitWindow exit = new ExitWindow(this);
+            exit.Show();
+        }
+
+        private void backButtonPush(object sender, MouseButtonEventArgs e) {
+            caller.Show();
+            this.Close();
         }
     }
 }

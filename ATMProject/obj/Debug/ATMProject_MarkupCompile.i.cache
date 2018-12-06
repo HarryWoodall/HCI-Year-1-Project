@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\obj\Debug\
+C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\
 ATMProject
 none
 false
 DEBUG;TRACE
-F:\1st Year\HCI and WebDev\Assignment1\ATMProject\ATMProject\App.xaml
-101032297242
+C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\App.xaml
+111425534379
 1-948764164
-20800512133
+21-1064682029
 131569487696
-AuthenticationWindow.xaml;ExitWindow.xaml;MainWindow.xaml;ResetPinPopup.xaml;ResetPinWindow.xaml;SelectCurrencyWindow.xaml;ViewBalanceWindow.xaml;ViewStatementWindow.xaml;WithdrawAmountPopup.xaml;WithdrawWindow.xaml;
+AuthenticationWindow.xaml;ExitWindow.xaml;MainWindow.xaml;ResetPinPopup.xaml;ResetPinWindow.xaml;SelectCurrencyWindow.xaml;ViewBalanceWindow.xaml;ViewStatementWindow.xaml;WithdrawAmountPopup.xaml;WithdrawErrorPopup.xaml;WithdrawWindow.xaml;
 
 True
 

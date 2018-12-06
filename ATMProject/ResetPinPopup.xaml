@@ -13,7 +13,7 @@
         <Border x:Name="successContent" BorderBrush="Black" BorderThickness="0" HorizontalAlignment="Center" Height="200" Margin="0" VerticalAlignment="Center" Width="200" Background="#FF2BE20E">
             <Label Content="✔" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="72" Foreground="White"/>
         </Border>
-        <DockPanel x:Name="failedContent" LastChildFill="False" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Hidden">
+        <DockPanel x:Name="failedContent" LastChildFill="False" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Disabled" Visibility="Hidden">
             <Border BorderBrush="Black" BorderThickness="10" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="200" CornerRadius="90" Padding="0" Background="#FF4BC937">
                 <Label Content="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="72" Background="{x:Null}" FontWeight="Bold"/>
             </Border>

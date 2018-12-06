@@ -32,6 +32,7 @@ namespace ATMProject {
         private void InsertTokenPress(object sender, MouseButtonEventArgs e) {
             buttonBorder.Visibility = Visibility.Hidden;
             authenticator.Visibility = Visibility.Visible;
+            ExitButton.Visibility = Visibility.Visible;
         }
 
         private void numericButtonPress(object sender, MouseButtonEventArgs e) {
@@ -93,6 +94,11 @@ namespace ATMProject {
             input = "";
             confirmButton.Background = new SolidColorBrush(Color.FromArgb(0xFF, 0xB6, 0xB6, 0xB6));
             confirmButton.Foreground = new SolidColorBrush(Color.FromArgb(0xFF, 0xC9, 0xC9, 0xC9));
+        }
+
+        private void exitButtonPush(object sender, MouseButtonEventArgs e) {
+            ExitWindow exit = new ExitWindow(this);
+            exit.Show();
         }
     }
 }
