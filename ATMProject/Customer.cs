@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,12 @@ namespace ATMProject {
 
     public class Customer {
 
+        public enum Culture { UK, US, EUR, AUD, POL, UAE, CH, JP }
+        private Dictionary<Culture, string> symbol = new Dictionary<Culture, string>();
+        private Dictionary<Culture, float> rates = new Dictionary<Culture, float>(); // Google -- 06/12/2018
+
         private string PIN;
+        private Culture culture;
         private string name;
         private int balance;
         private List<string[]> statements = new List<string[]>();
@@ -17,6 +23,24 @@ namespace ATMProject {
             this.PIN = PIN;
             this.name = name;
             this.balance = balance;
+
+            symbol.Add(Culture.UK, "£");
+            symbol.Add(Culture.US, "$");
+            symbol.Add(Culture.EUR, "€");
+            symbol.Add(Culture.AUD, "$");
+            symbol.Add(Culture.POL, "zł");
+            symbol.Add(Culture.UAE, "د.إ");
+            symbol.Add(Culture.CH, "¥");
+            symbol.Add(Culture.JP, "¥");
+
+            rates.Add(Culture.UK, 1.0f);
+            rates.Add(Culture.US, 0.79f);
+            rates.Add(Culture.EUR, 0.89f);
+            rates.Add(Culture.AUD, 0.57f);
+            rates.Add(Culture.POL, 0.21f);
+            rates.Add(Culture.UAE, 0.21f);
+            rates.Add(Culture.CH, 0.11f);
+            rates.Add(Culture.JP, 0.0070f);
         }
 
         public string getPIN() {
@@ -25,6 +49,22 @@ namespace ATMProject {
 
         public void setPIN(string PIN) {
             this.PIN = PIN;
+        }
+
+        public void setCulture(Culture culture) {
+            this.culture = culture;
+        }
+
+        public Culture GetCulture() {
+            return culture;
+        }
+
+        public float getRate(Culture culture) {
+            return rates[culture];
+        }
+
+        public string getSymbol(Culture culture) {
+            return symbol[culture];
         }
 
         public string getName() {

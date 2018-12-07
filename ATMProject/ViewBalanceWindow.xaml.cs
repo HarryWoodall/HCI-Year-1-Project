@@ -26,7 +26,7 @@ namespace ATMProject {
             InitializeComponent();
             this.caller = caller;
             this.customer = customer;
-            balanceLabel.Content = customer.getBalance().ToString();
+            balanceLabel.Content = customer.getSymbol(customer.GetCulture()) + (customer.getBalance() / customer.getRate(customer.GetCulture())).ToString("0.00");
         }
 
         private void Window_ContentRendered(object sender, EventArgs e) {

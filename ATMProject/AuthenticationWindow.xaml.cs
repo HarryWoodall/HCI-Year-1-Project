@@ -81,7 +81,7 @@ namespace ATMProject {
 
                 if (customer.getPIN() == input) {
                     Console.WriteLine("Authenticated");
-                    MainWindow window = new MainWindow(this, customer);
+                    SelectCurrencyWindow window = new SelectCurrencyWindow(this, customer);
                     window.Show();
                 } else {
                     Console.WriteLine("Invalid Pin");
