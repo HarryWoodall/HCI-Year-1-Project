@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,6 +19,7 @@ namespace ATMProject {
         private string name;
         private int balance;
         private List<string[]> statements = new List<string[]>();
+        private List<string> outputs = new List<string>();
 
         public Customer(string PIN, string name, int balance) {
             this.PIN = PIN;
@@ -63,7 +65,15 @@ namespace ATMProject {
             return rates[culture];
         }
 
+        public float getRate() {
+            return rates[culture];
+        }
+
         public string getSymbol(Culture culture) {
+            return symbol[culture];
+        }
+
+        public string getSymbol() {
             return symbol[culture];
         }
 
@@ -93,6 +103,36 @@ namespace ATMProject {
 
         public List<string[]> getStatements() {
             return statements;
+        }
+
+        public void updateFile() {
+            try {
+                using (StreamReader sr = new StreamReader("../../Assests/Token.txt")) {
+
+                    while (!sr.EndOfStream) {
+                        outputs.Add(sr.ReadLine());
+                    }
+                    sr.Close();
+                }
+            }
+            catch (Exception ex) {
+                Console.WriteLine("Error");
+                Console.WriteLine(ex.Message);
+            }
+
+            outputs[1] = PIN;
+
+            try {
+                using (StreamWriter sw = new StreamWriter("../../Assests/Token.txt")) {
+                    foreach (string item in outputs) {
+                        sw.WriteLine(item);
+                    }
+                }
+            }
+            catch (Exception ex) {
+                Console.WriteLine("Error");
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }

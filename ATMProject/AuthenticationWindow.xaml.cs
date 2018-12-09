@@ -32,7 +32,7 @@ namespace ATMProject {
         private void InsertTokenPress(object sender, MouseButtonEventArgs e) {
             buttonBorder.Visibility = Visibility.Hidden;
             authenticator.Visibility = Visibility.Visible;
-            ExitButton.Visibility = Visibility.Visible;
+            exitButton.Visibility = Visibility.Visible;
         }
 
         private void numericButtonPress(object sender, MouseButtonEventArgs e) {
@@ -47,6 +47,7 @@ namespace ATMProject {
                 if (input.Length == 4) {
                     confirmButton.Background = new SolidColorBrush(Color.FromArgb(0xFF, 0x4B, 0xC9, 0x37));
                     confirmButton.Foreground = new SolidColorBrush(Color.FromArgb(0xFF, 0xFF, 0xFF, 0xFF));
+                    confirmButton.BorderBrush = new SolidColorBrush(Color.FromArgb(0xFF, 0x1B, 0x99, 0x07));
                 }
             } else {
                 SoundPlayer player = new SoundPlayer("../../Assests/Sounds/Error_Select.wav");
@@ -85,6 +86,14 @@ namespace ATMProject {
                     window.Show();
                 } else {
                     Console.WriteLine("Invalid Pin");
+                    WithdrawErrorPopup popup = new WithdrawErrorPopup();
+                    popup.Show();
+
+                    authenticatorOutput.Text = "";
+                    input = "";
+                    confirmButton.Background = new SolidColorBrush(Color.FromArgb(0xFF, 0xB6, 0xB6, 0xB6));
+                    confirmButton.Foreground = new SolidColorBrush(Color.FromArgb(0xFF, 0xC9, 0xC9, 0xC9));
+                    confirmButton.BorderBrush = new SolidColorBrush(Color.FromArgb(0xFF, 0x64, 0x64, 0x64));
                 }
             }
         }
@@ -94,10 +103,11 @@ namespace ATMProject {
             input = "";
             confirmButton.Background = new SolidColorBrush(Color.FromArgb(0xFF, 0xB6, 0xB6, 0xB6));
             confirmButton.Foreground = new SolidColorBrush(Color.FromArgb(0xFF, 0xC9, 0xC9, 0xC9));
+            confirmButton.BorderBrush = new SolidColorBrush(Color.FromArgb(0xFF, 0x64, 0x64, 0x64));
         }
 
         private void exitButtonPush(object sender, MouseButtonEventArgs e) {
-            ExitWindow exit = new ExitWindow(this);
+            ExitWindow exit = new ExitWindow(this, false, null);
             exit.Show();
         }
     }

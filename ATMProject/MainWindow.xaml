@@ -10,7 +10,7 @@
         Title="MainWindow" Height="1024" Width="1280" Background="Black" ContentRendered="Window_ContentRendered">
     <Grid Width="1280" Height="1024" Background="White">
         <Border BorderBrush="#FF092D4B" BorderThickness="0,150">
-            <Border BorderThickness="0" Margin="1015,605,88,15" Background="#FF092D4B" MouseDown="exitButtonPush" Width="177" Height="107">
+            <Border BorderThickness="0,0,5,5" Margin="1047,595,50,20" Background="#FF092D4B" MouseDown="exitButtonPush" Width="177" Height="107" CornerRadius="10" BorderBrush="Black" VerticalAlignment="Bottom" HorizontalAlignment="Right">
                 <Image Height="90" Width="90" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Source="Assests/Icons/Exit.png"/>
             </Border>
         </Border>
@@ -24,16 +24,16 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Border BorderThickness="1" Margin="2" HorizontalAlignment="Stretch" Grid.RowSpan="2" VerticalAlignment="Stretch" Background="#FF0A8DD8" Grid.Column="0" MouseDown="withdrawButtonPush">
+            <Border BorderThickness="0,0,5,5" Margin="2" HorizontalAlignment="Stretch" Grid.RowSpan="2" VerticalAlignment="Stretch" Grid.Column="0" MouseDown="withdrawButtonPush" CornerRadius="10" BorderBrush="#FF095E8F" Background="#FF0A8DD8">
                 <Image Source="Assests/Icons/withdraw.png" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Width="100" Height="100"/>
             </Border>
-            <Border BorderThickness="1" Grid.Column="2" Margin="2" Background="#FF0A8DD8" MouseDown="viewStatementButtonPush">
+            <Border BorderThickness="1,0,5,5" Grid.Column="2" Margin="2" Background="#FF0A8DD8" MouseDown="viewStatementButtonPush" CornerRadius="10" BorderBrush="#FF095E8F">
                 <Image Margin="10" Source="Assests/Icons/ViewStatement.png" VerticalAlignment="Center" HorizontalAlignment="Center" Width="100" Height="100"/>
             </Border>
-            <Border BorderThickness="1" Grid.Column="1" Margin="2" Background="#FF0A8DD8" Grid.Row="0" MouseDown="viewBalanceButtonPush" Grid.RowSpan="2">
+            <Border BorderThickness="1,0,5,5" Grid.Column="1" Margin="2" Background="#FF0A8DD8" Grid.Row="0" MouseDown="viewBalanceButtonPush" Grid.RowSpan="2" CornerRadius="10" BorderBrush="#FF095E8F">
                 <Image Margin="10" Source="Assests/Icons/ViewBalance.png" MouseDown="viewBalanceButtonPush" OpacityMask="#FF1A65A4" VerticalAlignment="Center" HorizontalAlignment="Center" Width="100" Height="100"/>
             </Border>
-            <Border BorderThickness="1" Grid.Column="2" Margin="2" Background="#FF0A8DD8" Grid.Row="1" MouseDown="resetPinButtonPush">
+            <Border BorderThickness="1,0,5,5" Grid.Column="2" Margin="2" Background="#FF0A8DD8" Grid.Row="1" MouseDown="resetPinButtonPush" CornerRadius="10" BorderBrush="#FF095E8F">
                 <Image Margin="10" Source="Assests/Icons/ChangePin.png" VerticalAlignment="Center" HorizontalAlignment="Center"/>
             </Border>
         </Grid>

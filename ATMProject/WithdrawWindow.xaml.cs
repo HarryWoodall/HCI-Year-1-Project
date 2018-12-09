@@ -25,6 +25,7 @@ namespace ATMProject {
             InitializeComponent();
             caller = window;
             this.customer = customer;
+            setUpAmounts();
         }
 
         private void Window_ContentRendered(object sender, EventArgs e) {
@@ -37,13 +38,19 @@ namespace ATMProject {
 
             if (customer.withdraw(ammount)) {
                 Console.WriteLine("Success");
+                ExitWindow exit = new ExitWindow(this, true, customer);
+                exit.Show();
             } else {
                 Console.WriteLine("Not Enough Funds");
+                UITimers timer = new UITimers();
+                WithdrawErrorPopup errorPopup = new WithdrawErrorPopup();
+                errorPopup.Show();
+                timer.popUpWindowTimer(errorPopup, 15);
             }
         }
 
         private void exitButtonPush(object sender, MouseButtonEventArgs e) {
-            ExitWindow exit = new ExitWindow(this);
+            ExitWindow exit = new ExitWindow(this, false, customer);
             exit.Show();
         }
 
@@ -59,6 +66,42 @@ namespace ATMProject {
 
         public void setAmount(int amount) {
             this.amount = amount;
+        }
+
+        private void setUpAmounts() {
+            foreach(object control in contentGrid.Children) {
+                if (control is Border) {
+                    Border border = (Border)control;
+                    Label label = (Label)border.Child;
+                    string content = customer.getSymbol();
+
+                    if (label.Content.ToString().Contains('£')) {
+
+                        switch (customer.GetCulture()) {
+                            case Customer.Culture.AUD:
+                                content += (Convert.ToInt32(label.Content.ToString().Split('£')[1]) * 2).ToString();
+                                break;
+                            case Customer.Culture.POL:
+                                content += (Convert.ToInt32(label.Content.ToString().Split('£')[1]) * 5).ToString();
+                                break;
+                            case Customer.Culture.UAE:
+                                content += (Convert.ToInt32(label.Content.ToString().Split('£')[1]) * 5).ToString();
+                                break;
+                            case Customer.Culture.CH:
+                                content += (Convert.ToInt32(label.Content.ToString().Split('£')[1]) * 10).ToString();
+                                break;
+                            case Customer.Culture.JP:
+                                content += (Convert.ToInt32(label.Content.ToString().Split('£')[1]) * 150).ToString();
+                                break;
+                            default:
+                                content += label.Content.ToString().Split('£')[1];
+                                break;
+                        }
+
+                        label.Content = content;
+                    }
+                }
+            }
         }
     }
 }

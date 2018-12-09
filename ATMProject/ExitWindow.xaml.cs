@@ -19,16 +19,48 @@ namespace ATMProject {
     public partial class ExitWindow : Window {
 
         private Window caller;
+        private Boolean withdraw;
+        private Customer customer;
 
-        public ExitWindow(Window caller) {
+        public ExitWindow(Window caller, bool withdraw, Customer customer) {
             InitializeComponent();
             this.caller = caller;
-            UITimers timer = new UITimers();
-            timer.exitTimer(this, 50);
+            this.withdraw = withdraw;
+            this.customer = customer;
+
+            if (withdraw) {
+                moneyBorder.Visibility = Visibility.Visible;
+                cardBorder.Visibility = Visibility.Hidden;
+                confirmBorder.Visibility = Visibility.Hidden;
+            }
+            else {
+                moneyBorder.Visibility = Visibility.Hidden;
+                cardBorder.Visibility = Visibility.Visible;
+                confirmBorder.Visibility = Visibility.Hidden;
+            }
         }
 
         private void Window_ContentRendered(object sender, EventArgs e) {
             caller.Close();
+        }
+
+        private void takeMoneyButtonPush(object sender, MouseButtonEventArgs e) {
+            moneyBorder.Visibility = Visibility.Hidden;
+            cardBorder.Visibility = Visibility.Visible;
+            confirmBorder.Visibility = Visibility.Hidden;
+        }
+
+        private void takeCardButtonPush(object sender, MouseButtonEventArgs e) {
+            moneyBorder.Visibility = Visibility.Hidden;
+            cardBorder.Visibility = Visibility.Hidden;
+            confirmBorder.Visibility = Visibility.Visible;
+
+            if (customer != null) {
+                customer.updateFile();
+            }
+
+            UITimers timer = new UITimers();
+            timer.exitTimer(this, 50);
         }
     }
 }

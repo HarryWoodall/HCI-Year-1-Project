@@ -193,6 +193,9 @@
     <Resource Include="Assests\Icons\Withdraw.png" />
     <Resource Include="Assests\Icons\White-Arrow.png" />
     <Resource Include="Assests\Icons\Warning.png" />
+    <Resource Include="Assests\Icons\InsertCard.png" />
+    <Resource Include="Assests\Icons\TakeCard.png" />
+    <Resource Include="Assests\Icons\TakeMoney.png" />
     <Content Include="Assests\Sounds\Error_Select.wav" />
   </ItemGroup>
   <ItemGroup />

@@ -98,12 +98,16 @@ namespace ATMProject
                 if (authenticatorOutput.Text.Length == 4) {
                     confirmButton.Background = new SolidColorBrush(Color.FromArgb(0xFF, 0x4B, 0xC9, 0x37));
                     confirmButton.Foreground = new SolidColorBrush(Color.FromArgb(0xFF, 0xFF, 0xFF, 0xFF));
+                    confirmButton.BorderBrush = new SolidColorBrush(Color.FromArgb(0xFF, 0x1B, 0x99, 0x07));
                 }
             }
         }
 
         private void cancelButtonPress(object sender, MouseButtonEventArgs e) {
             confirmButton.Background = new SolidColorBrush(Color.FromArgb(0xFF, 0xB6, 0xB6, 0xB6));
+            confirmButton.Foreground = new SolidColorBrush(Color.FromArgb(0xFF, 0xC9, 0xC9, 0xC9));
+            confirmButton.BorderBrush = new SolidColorBrush(Color.FromArgb(0xFF, 0x64, 0x64, 0x64));
+
             authenticatorOutput.Clear();
             if (!onSecondAttempt) {
                 firstAttempt = "";
@@ -117,7 +121,7 @@ namespace ATMProject
         }
 
         private void exitButtonPush(object sender, MouseButtonEventArgs e) {
-            ExitWindow exit = new ExitWindow(this);
+            ExitWindow exit = new ExitWindow(this, false, customer);
             exit.Show();
         }
 

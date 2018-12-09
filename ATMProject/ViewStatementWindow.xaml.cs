@@ -82,7 +82,7 @@ namespace ATMProject {
             ammountLabel.Height = 100;
             ammountLabel.HorizontalContentAlignment = HorizontalAlignment.Left;
             ammountLabel.VerticalContentAlignment = VerticalAlignment.Center;
-            ammountLabel.Content = statement[2];
+            ammountLabel.Content =  customer.getSymbol() + (float.Parse(statement[2]) / customer.getRate()).ToString("0.00");
             grid.Children.Add(ammountLabel);
             Grid.SetColumn(ammountLabel, 2);
 
@@ -90,8 +90,12 @@ namespace ATMProject {
         }
 
         private void exitButtonPush(object sender, MouseButtonEventArgs e) {
-            ExitWindow exit = new ExitWindow(this);
+            ExitWindow exit = new ExitWindow(this, false, customer);
             exit.Show();
+        }
+
+        private float convertToMoney(string money) {
+            return float.Parse(money);
         }
 
         private void backButtonPush(object sender, MouseButtonEventArgs e) {

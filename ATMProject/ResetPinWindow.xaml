@@ -10,7 +10,7 @@
         Title="ResetPinWindow" Height="1024" Width="1280" Background="Black" ContentRendered="Window_ContentRendered">
     <Grid Width="1280" Height="1024" Background="White">
         <Border BorderBrush="#FF092D4B" BorderThickness="0,150">
-            <Border BorderThickness="0" Margin="1015,605,88,15" Background="#FF092D4B" MouseDown="exitButtonPush" Width="177" Height="107">
+            <Border BorderThickness="0,0,5,5" Margin="1047,595,50,20" Background="#FF092D4B" MouseDown="exitButtonPush" Width="177" Height="107" CornerRadius="10" BorderBrush="Black" VerticalAlignment="Bottom" HorizontalAlignment="Right">
                 <Image Height="90" Width="90" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Source="Assests/Icons/Exit.png"/>
             </Border>
         </Border>
@@ -27,18 +27,18 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Label Content="1" Margin="10" Grid.Row="1" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0A8DD8" Foreground="White" MouseDown="numericButtonPress"/>
-            <Label Content="2" Margin="10" Grid.Row="1" FontSize="72" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0A8DD8" Foreground="White" MouseDown="numericButtonPress"/>
-            <Label Content="3" Margin="10" Grid.Row="1" FontSize="72" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0A8DD8" Foreground="White" MouseDown="numericButtonPress"/>
-            <Label Content="4" Margin="10" Grid.Row="2" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0A8DD8" Foreground="White" MouseDown="numericButtonPress"/>
-            <Label Content="5" Margin="10" Grid.Row="2" FontSize="72" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0A8DD8" Foreground="White" MouseDown="numericButtonPress"/>
-            <Label Content="6" Margin="10" Grid.Row="2" FontSize="72" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0A8DD8" Foreground="White" MouseDown="numericButtonPress"/>
-            <Label Content="7" Margin="10" Grid.Row="3" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0A8DD8" Foreground="White" MouseDown="numericButtonPress"/>
-            <Label Content="8" Margin="10" Grid.Row="3" FontSize="72" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0A8DD8" Foreground="White" MouseDown="numericButtonPress"/>
-            <Label Content="9" Margin="10" Grid.Row="3" FontSize="72" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0A8DD8" Foreground="White" MouseDown="numericButtonPress"/>
-            <Label Content="X" Margin="10" Grid.Row="4" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFD86618" Foreground="White" MouseDown="cancelButtonPress" FontFamily="Segoe UI Semibold"/>
-            <Label Content="0" Margin="10" Grid.Row="4" FontSize="72" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0A8DD8" Foreground="White" MouseDown="numericButtonPress"/>
-            <Label x:Name="confirmButton" Content="✔" Margin="10" Grid.Row="4" FontSize="72" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFB6B6B6" Foreground="#FFC9C9C9" MouseDown="confirmButtonPress"/>
+            <Label Content="1" Margin="10" Grid.Row="1" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0A8DD8" Foreground="White" MouseDown="numericButtonPress" BorderBrush="#FF095E8F" BorderThickness="0,0,5,5"/>
+            <Label Content="2" Margin="10" Grid.Row="1" FontSize="72" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0A8DD8" Foreground="White" MouseDown="numericButtonPress" BorderBrush="#FF095E8F" BorderThickness="0,0,5,5"/>
+            <Label Content="3" Margin="10" Grid.Row="1" FontSize="72" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0A8DD8" Foreground="White" MouseDown="numericButtonPress" BorderBrush="#FF095E8F" BorderThickness="0,0,5,5"/>
+            <Label Content="4" Margin="10" Grid.Row="2" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0A8DD8" Foreground="White" MouseDown="numericButtonPress" BorderBrush="#FF095E8F" BorderThickness="0,0,5,5"/>
+            <Label Content="5" Margin="10" Grid.Row="2" FontSize="72" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0A8DD8" Foreground="White" MouseDown="numericButtonPress" BorderBrush="#FF095E8F" BorderThickness="0,0,5,5"/>
+            <Label Content="6" Margin="10" Grid.Row="2" FontSize="72" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0A8DD8" Foreground="White" MouseDown="numericButtonPress" BorderBrush="#FF095E8F" BorderThickness="0,0,5,5"/>
+            <Label Content="7" Margin="10" Grid.Row="3" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0A8DD8" Foreground="White" MouseDown="numericButtonPress" BorderBrush="#FF095E8F" BorderThickness="0,0,5,5"/>
+            <Label Content="8" Margin="10" Grid.Row="3" FontSize="72" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0A8DD8" Foreground="White" MouseDown="numericButtonPress" BorderBrush="#FF095E8F" BorderThickness="0,0,5,5"/>
+            <Label Content="9" Margin="10" Grid.Row="3" FontSize="72" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0A8DD8" Foreground="White" MouseDown="numericButtonPress" BorderBrush="#FF095E8F" BorderThickness="0,0,5,5"/>
+            <Label Content="X" Margin="10" Grid.Row="4" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFD86618" Foreground="White" MouseDown="cancelButtonPress" FontFamily="Segoe UI Semibold" BorderThickness="0,0,5,5" BorderBrush="#FF8B4413"/>
+            <Label Content="0" Margin="10" Grid.Row="4" FontSize="72" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0A8DD8" Foreground="White" MouseDown="numericButtonPress" BorderBrush="#FF095E8F" BorderThickness="0,0,5,5"/>
+            <Label x:Name="confirmButton" Content="✔" Margin="10" Grid.Row="4" FontSize="72" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFB6B6B6" Foreground="#FFC9C9C9" MouseDown="confirmButtonPress" BorderThickness="0,0,5,5" BorderBrush="#FF646464"/>
             <TextBox x:Name="authenticatorOutput" Margin="10" TextWrapping="Wrap" Grid.ColumnSpan="3" FontSize="150" Padding="68,1,1,1" FontFamily="Consolas" FontWeight="Bold" TextDecorations="{x:Null}" BorderThickness="5" BorderBrush="#FF092D4B"/>
         </Grid>
         <Border x:Name="firstBorder" BorderBrush="Black" BorderThickness="5" HorizontalAlignment="Left" Height="100" Margin="940,157,0,0" VerticalAlignment="Top" Width="100" CornerRadius="90" Padding="0" Background="#FF4BC937">
@@ -47,7 +47,7 @@
         <Border x:Name="secondBorder" BorderBrush="#7F000000" BorderThickness="5" HorizontalAlignment="Left" Height="100" Margin="940,262,0,0" VerticalAlignment="Top" Width="100" CornerRadius="90" Padding="0" Background="#7FC1C1C1">
             <Label x:Name="secondLabel" Content="2" FontSize="48" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#7F000000"/>
         </Border>
-        <Border Margin="100,200,1042,704" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF092D4B" Width="140" Height="120" MouseDown="backButtonPush">
+        <Border Margin="50,170,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF092D4B" Width="140" Height="120" MouseDown="backButtonPush" BorderBrush="Black" BorderThickness="0,0,5,5" CornerRadius="10">
             <Image Source="Assests/Icons/White-Arrow.png" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="90" Stretch="Fill"/>
         </Border>
     </Grid>

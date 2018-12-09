@@ -35,7 +35,7 @@ namespace ATMProject {
 
             if (amountOutput.Text.Length == 0) {
                 if (label.Content.ToString() != "0") {
-                    amountOutput.Text = "£" + label.Content;
+                    amountOutput.Text = customer.getSymbol() + label.Content;
                 }
             } else {
                 amountOutput.Text += label.Content;
@@ -44,16 +44,29 @@ namespace ATMProject {
         }
 
         private void confirmButtonPress(object sender, MouseButtonEventArgs e) {
-            int amount = Convert.ToInt32(output);
-            UITimers timer = new UITimers();
-            if (amount != 0 && amount % 5 == 0 && amount < customer.getBalance()) {
-                caller.setAmount(amount);
-                this.Close();
-            } else if (amount > customer.getBalance()){
-                WithdrawErrorPopup errorPopup = new WithdrawErrorPopup();
-                errorPopup.Show();
-                timer.popUpWindowTimer(errorPopup, 15);
-            } else if (amount == 0 || amount % 5 != 0) {
+            UITimers timer;
+            if (!(output == null || output == "")) {
+                int amount = Convert.ToInt32(output);
+                timer = new UITimers();
+                if (amount != 0 && amount % 5 == 0 && amount < customer.getBalance()) {
+                    caller.setAmount(amount);
+                    this.Close();
+                    ExitWindow exit = new ExitWindow(caller, true, customer);
+                    exit.Show();
+                }
+                else if (amount > customer.getBalance()) {
+                    WithdrawErrorPopup errorPopup = new WithdrawErrorPopup();
+                    errorPopup.Show();
+
+                    output = "";
+                    amountOutput.Text = "";
+
+                }
+                else if (amount == 0 || amount % 5 != 0) {
+                    timer.colorTimer(amountOutput, new SolidColorBrush(Color.FromArgb(0xFF, 0xF3, 0x5A, 0x5A)), 20);
+                }
+            } else {
+                timer = new UITimers();
                 timer.colorTimer(amountOutput, new SolidColorBrush(Color.FromArgb(0xFF, 0xF3, 0x5A, 0x5A)), 20);
             }
         }

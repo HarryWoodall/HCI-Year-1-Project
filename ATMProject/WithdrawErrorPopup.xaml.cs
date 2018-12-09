@@ -23,5 +23,10 @@ namespace ATMProject
         {
             InitializeComponent();
         }
+
+        private void Window_ContentRendered(object sender, EventArgs e) {
+            UITimers timer = new UITimers();
+            timer.popUpWindowTimer(this, 15);
+        }
     }
 }

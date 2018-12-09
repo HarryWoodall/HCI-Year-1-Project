@@ -8,7 +8,7 @@
         WindowStyle="None"
         WindowStartupLocation="CenterScreen"
         AllowsTransparency="True"
-        Title="WithdrawErrorPopup" Height="400" Width="800">
+        Title="WithdrawErrorPopup" Height="400" Width="800" ContentRendered="Window_ContentRendered">
     <Grid Background="White">
         <Border BorderBrush="#FFE42F2F" BorderThickness="20" />
         <Image Source="Assests/Icons/Warning.png" Margin="20" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="250"></Image>

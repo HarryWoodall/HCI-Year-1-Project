@@ -39,7 +39,7 @@ namespace ATMProject {
         }
 
         private void exitButtonPush(object sender, MouseButtonEventArgs e) {
-            ExitWindow exit = new ExitWindow(this);
+            ExitWindow exit = new ExitWindow(this, false, customer);
             exit.Show();
         }
     }

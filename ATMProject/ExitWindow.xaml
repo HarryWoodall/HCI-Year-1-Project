@@ -9,6 +9,16 @@
         WindowStyle="None"
         Title="ExitWindow" Height="1024" Width="1280" Background="Black" ContentRendered="Window_ContentRendered">
     <Grid x:Name="contentGrid" Width="1280" Height="1024" Background="White">
-        <Label Content="Thank you!" Margin="178,351,192,369" FontSize="100" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Border BorderBrush="#FF092D4B" BorderThickness="0,150">
+        </Border>
+        <Border x:Name="moneyBorder" BorderBrush="#FF095E8F" BorderThickness="0,0,10,10" HorizontalAlignment="Center" Height="498" Margin="0" VerticalAlignment="Center" Width="545" Background="#FF0A8DD8" CornerRadius="20" Visibility="Hidden" MouseDown="takeMoneyButtonPush">
+            <Image Source="Assests/Icons/TakeMoney.png" />
+        </Border>
+        <Border x:Name="cardBorder" BorderBrush="#FF095E8F" BorderThickness="0,0,10,10" HorizontalAlignment="Center" Height="498" Margin="0" VerticalAlignment="Center" Width="545" Background="#FF0A8DD8" CornerRadius="20" Visibility="Hidden" MouseDown="takeCardButtonPush">
+            <Image Source="Assests/Icons/TakeCard.png" />
+        </Border>
+        <Border x:Name="confirmBorder" BorderBrush="#FF095E8F" BorderThickness="0,0,10,10" HorizontalAlignment="Center" Height="498" Margin="0" VerticalAlignment="Center" Width="545" Background="#FF0A8DD8" CornerRadius="20">
+            <Label Content="✔" FontSize="200" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" />
+        </Border>
     </Grid>
 </Window>
