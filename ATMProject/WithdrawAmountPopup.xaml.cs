@@ -50,9 +50,10 @@ namespace ATMProject {
                 timer = new UITimers();
                 if (amount != 0 && amount % 5 == 0 && amount < customer.getBalance()) {
                     caller.setAmount(amount);
+                    WithdrawConfirmPopup confirm = new WithdrawConfirmPopup(caller, customer.getSymbol() + output, customer);
+                    confirm.Show();
                     this.Close();
-                    ExitWindow exit = new ExitWindow(caller, true, customer);
-                    exit.Show();
+
                 }
                 else if (amount > customer.getBalance()) {
                     WithdrawErrorPopup errorPopup = new WithdrawErrorPopup();

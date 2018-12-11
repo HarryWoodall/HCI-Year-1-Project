@@ -58,5 +58,10 @@ namespace ATMProject
             ViewStatementWindow statementWindow = new ViewStatementWindow(this, customer);
             statementWindow.Show();
         }
+
+        private void changeCurrencyButtonPush(object sender, MouseButtonEventArgs e) {
+            SelectCurrencyWindow currency = new SelectCurrencyWindow(this, customer);
+            currency.Show();
+        }
     }
 }

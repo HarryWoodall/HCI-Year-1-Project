@@ -68,3 +68,7 @@ C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and We
 C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\WithdrawAmountPopup.baml
 C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\WithdrawErrorPopup.g.cs
 C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\WithdrawErrorPopup.baml
+C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\InvalidPINPopup.g.cs
+C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\InvalidPINPopup.baml
+C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\WithdrawConfirmPopup.g.cs
+C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\obj\Debug\WithdrawConfirmPopup.baml

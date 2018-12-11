@@ -58,6 +58,9 @@
     <Compile Include="ExitWindow.xaml.cs">
       <DependentUpon>ExitWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="InvalidPINPopup.xaml.cs">
+      <DependentUpon>InvalidPINPopup.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ResetPinPopup.xaml.cs">
       <DependentUpon>ResetPinPopup.xaml</DependentUpon>
     </Compile>
@@ -77,6 +80,9 @@
     <Compile Include="WithdrawAmountPopup.xaml.cs">
       <DependentUpon>WithdrawAmountPopup.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WithdrawConfirmPopup.xaml.cs">
+      <DependentUpon>WithdrawConfirmPopup.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WithdrawErrorPopup.xaml.cs">
       <DependentUpon>WithdrawErrorPopup.xaml</DependentUpon>
     </Compile>
@@ -88,6 +94,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ExitWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InvalidPINPopup.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -127,6 +137,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WithdrawAmountPopup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WithdrawConfirmPopup.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -196,6 +210,8 @@
     <Resource Include="Assests\Icons\InsertCard.png" />
     <Resource Include="Assests\Icons\TakeCard.png" />
     <Resource Include="Assests\Icons\TakeMoney.png" />
+    <Resource Include="Assests\Icons\UnlockError.png" />
+    <Resource Include="Assests\Icons\CurrencyChange.png" />
     <Content Include="Assests\Sounds\Error_Select.wav" />
   </ItemGroup>
   <ItemGroup />

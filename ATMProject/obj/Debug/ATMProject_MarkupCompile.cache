@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Harry\Documents\Salford University\Computer Science\1st Year\HCI and Webdev\Assignment 1\ATMProject\ATMProject\App.xaml
-111425534379
+13-1137497448
 1-948764164
-171409276273
+19648722018
 131569487696
-AuthenticationWindow.xaml;ExitWindow.xaml;MainWindow.xaml;ResetPinPopup.xaml;ResetPinWindow.xaml;SelectCurrencyWindow.xaml;ViewBalanceWindow.xaml;ViewStatementWindow.xaml;WithdrawAmountPopup.xaml;WithdrawErrorPopup.xaml;WithdrawWindow.xaml;
+AuthenticationWindow.xaml;ExitWindow.xaml;InvalidPINPopup.xaml;MainWindow.xaml;ResetPinPopup.xaml;ResetPinWindow.xaml;SelectCurrencyWindow.xaml;ViewBalanceWindow.xaml;ViewStatementWindow.xaml;WithdrawAmountPopup.xaml;WithdrawConfirmPopup.xaml;WithdrawErrorPopup.xaml;WithdrawWindow.xaml;
 
 False
 

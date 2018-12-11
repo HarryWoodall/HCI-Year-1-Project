@@ -53,8 +53,14 @@ namespace ATMProject
                 customer.setCulture(Customer.Culture.JP);
             }
 
-            MainWindow window = new MainWindow(this, customer);
-            window.Show();
+            if (caller is AuthenticationWindow) {
+                MainWindow window = new MainWindow(this, customer);
+                window.Show();
+            } else  if (caller is WithdrawWindow){
+                caller.Close();
+                caller = new WithdrawWindow(this, customer);
+                caller.Show();
+            }
         }
 
         private void Window_ContentRendered(object sender, EventArgs e) {

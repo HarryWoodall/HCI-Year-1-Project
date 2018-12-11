@@ -86,7 +86,7 @@ namespace ATMProject {
                     window.Show();
                 } else {
                     Console.WriteLine("Invalid Pin");
-                    WithdrawErrorPopup popup = new WithdrawErrorPopup();
+                    InvalidPINPopup popup = new InvalidPINPopup();
                     popup.Show();
 
                     authenticatorOutput.Text = "";

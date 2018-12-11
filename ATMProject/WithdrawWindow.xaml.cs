@@ -38,8 +38,8 @@ namespace ATMProject {
 
             if (customer.withdraw(ammount)) {
                 Console.WriteLine("Success");
-                ExitWindow exit = new ExitWindow(this, true, customer);
-                exit.Show();
+                WithdrawConfirmPopup confirm = new WithdrawConfirmPopup(this, label.Content.ToString(), customer);
+                confirm.Show();
             } else {
                 Console.WriteLine("Not Enough Funds");
                 UITimers timer = new UITimers();
@@ -102,6 +102,11 @@ namespace ATMProject {
                     }
                 }
             }
+        }
+
+        private void changeCurrencyButtonPush(object sender, MouseButtonEventArgs e) {
+            SelectCurrencyWindow currency = new SelectCurrencyWindow(this, customer);
+            currency.Show();
         }
     }
 }
